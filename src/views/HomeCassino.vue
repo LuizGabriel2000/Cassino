@@ -1,26 +1,24 @@
 <template>
-  <div class="img-fundo">
-        <v-row class="ma-10">
+    <div class="img-fundo">
+        <v-container class="">
+            <v-row class="">
+                <v-col class="" cols="12">
+                    <h1 style="color:blue">Cassino Luiz Vegas</h1>    
+                </v-col>
 
-            
-            <v-col class="mx-6" cols="10">
-                <h2  style="color:blue">Cassino LG Vegas</h2>    
-            </v-col>
-
-            <v-col class="ma-auto" cols="12">
-                 <RoletaVue :niquels="niquels" :roleta1="roleta1" :roleta2="roleta2" :roleta3="roleta3"/>
-                 <RoletaVue :niquels="niquels" :roleta1="roleta4" :roleta2="roleta5" :roleta3="roleta6"/>
-                 <RoletaVue :niquels="niquels" :roleta1="roleta7" :roleta2="roleta8" :roleta3="roleta9"/>
-            </v-col>
+                <v-col class="" cols="12">
+                    <RoletaVue :niquels="niquels" :roleta1="roleta1" :roleta2="roleta2" :roleta3="roleta3"/>
+                    <RoletaVue :niquels="niquels" :roleta1="roleta4" :roleta2="roleta5" :roleta3="roleta6"/>
+                    <RoletaVue :niquels="niquels" :roleta1="roleta7" :roleta2="roleta8" :roleta3="roleta9"/>
+                </v-col>
 
 
-            <v-col class="pa-3" cols="12">
-                <v-btn  color="#00000099" width="100%" @click="RodarSorte()">Rodar</v-btn>
-            </v-col>
-
-        </v-row>
-       
-  </div>
+                <v-col class="" cols="12">
+                    <v-btn class="btn"  color="#4c0977" width="100%" @click="RodarSorte()">Rodar</v-btn>
+                </v-col>
+            </v-row>
+        </v-container>
+    </div>
 </template>
 
 <script>
@@ -135,7 +133,18 @@ export default {
 </script>
 
 <style>
+.img-fundo {
+   background-image: url('https://i.pinimg.com/originals/3c/55/14/3c5514ec51d377145201b361b35b05a5.jpg');
+    /* height: 100%; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
 
-
+.btn {
+    padding: 10px;
+}
 
 </style>
