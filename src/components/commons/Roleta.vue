@@ -1,18 +1,18 @@
 <template>
   <v-row>
-    <v-col cols="4">
+    <v-col cols="12" md="4">
         <div class="card">
             <img width="100px" :src="niquels[roleta1]" alt="">
         </div> 
     </v-col>
 
-    <v-col cols="4">
+    <v-col cols="12" md="4">
         <div  class="card">
             <img width="100px" :src="niquels[roleta2]" alt="">
         </div> 
     </v-col>
 
-    <v-col cols="4">
+    <v-col cols="12" md="4">
         <div class="card">
             <img width="100px" :src="niquels[roleta3]" alt="">
         </div>
